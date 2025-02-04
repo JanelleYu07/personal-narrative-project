@@ -23,7 +23,7 @@ Use your knowledge of object-oriented programming, two-dimensional (2D) arrays, 
 
 ## Video
 
-[![Thumbnail for my projet](thumbnail.png)]([https://youtu.be/PL_-QpqNvtY])
+[![Thumbnail for my project](thumbnail.png)](https://youtu.be/PL_-QpqNvtY)
 
 ## Story Description
 
