@@ -91,8 +91,12 @@ public class MyStory extends Scene {
     setTextStyle(Font.MONO, FontStyle.BOLD);
     drawText("Random City in Japan", 25, 70);
     pause(1);
-    setTextColor("pink");
-    drawText(jCity, 150, 130);
+    if (jCity.length() < 6) {
+      setTextColor("pink");      
+    } else {
+      setTextColor("beige");      
+    }
+    drawText(jCity.toUpperCase(), 150, 130);
     pause(1);
     
     ImageFilter japan = new ImageFilter("japan.jpeg");
@@ -101,6 +105,7 @@ public class MyStory extends Scene {
     japan.colorShift(150);
     drawImage(japan, 70, 170, 250);
     pause(1);
+
   }
 
   /*
@@ -116,8 +121,12 @@ public class MyStory extends Scene {
       setTextStyle(Font.MONO, FontStyle.BOLD);
       drawText("Random City in France", 15, 70);
       pause(1);
-      setTextColor("purple");
-      drawText(fCity, 130, 120);
+      if (fCity.length() < 6) {
+        setTextColor("purple");     
+      } else {
+        setTextColor("violet");      
+      }
+      drawText(fCity.toUpperCase(), 130, 120);
       pause(1);
       
       ImageFilter paris = new ImageFilter("paris.jpg");
@@ -141,8 +150,12 @@ public class MyStory extends Scene {
       setTextStyle(Font.MONO, FontStyle.BOLD);
       drawText("Random City in Canada", 15, 70);
       pause(1);
-      setTextColor("tan");
-      drawText(cCity, 140, 120);
+      if (cCity.length() < 7) {    
+        setTextColor("tan");
+      } else {
+        setTextColor("fuchsia");      
+      }
+      drawText(cCity.toUpperCase(), 140, 120);
       pause(1);
       
       ImageFilter canada = new ImageFilter("canada.jpeg");
@@ -166,8 +179,12 @@ public class MyStory extends Scene {
       setTextStyle(Font.MONO, FontStyle.BOLD);
       drawText("Random City in Korea", 15, 70);
       pause(1);
-      setTextColor("tan");
-      drawText(kCity, 150, 120);
+      if (kCity.length() < 6) {
+        setTextColor("silver");     
+      } else {
+        setTextColor("white");      
+      }
+      drawText(kCity.toUpperCase(), 150, 120);
       pause(1);
       
       ImageFilter korea = new ImageFilter("korea.jpg");
